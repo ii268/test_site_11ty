@@ -1,0 +1,9 @@
+name: fast acc
+on: workflow_dispatch
+
+jobs:
+  eee:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo asssa
+    
