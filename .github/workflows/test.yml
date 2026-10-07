@@ -5,5 +5,6 @@ jobs:
   eee:
     runs-on: ubuntu-latest
     steps:
-      - run: echo asssa
-    
+      - run: echo "こんにちは"
+      - run: pwd
+      - run: ls
