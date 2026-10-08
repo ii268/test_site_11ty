@@ -9,10 +9,14 @@
   },
   "license": "UNLICENSED",
   "author": "ibuibu",
-  "type": "module",
+  "type": "commonjs",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "yasuko": "node test.js"
+	  "build-ghpages": "npx @11ty/eleventy --pathprefix=/test_site_11ty/",
+    "server": "eleventy --serve",
+    "build": "eleventy"
+  },
+  "dependencies": {
+    "@11ty/eleventy": "^3.1.6"
   }
 }
