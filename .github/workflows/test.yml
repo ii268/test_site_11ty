@@ -3,8 +3,12 @@ on: workflow_dispatch
 
 jobs:
   eee:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-slim
     steps:
+      - uses: actions/checkout@de0fac2e4500dabe0009e67214ff5f5447ce83dd # 6.0.2
       - run: echo "こんにちは"
       - run: pwd
       - run: ls
+      - run: node -v
+      - run: npm -v
+      - run: npm run yasuko
